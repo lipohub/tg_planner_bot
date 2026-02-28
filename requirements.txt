@@ -1,20 +1,16 @@
 # =============================================
-# requirements.txt — ВСЕ ЗАВИСИМОСТИ (проверено 26.02.2026)
-# Устанавливай командой: pip install -r requirements.txt
+# requirements.txt — ИСПРАВЛЕННАЯ ВЕРСИЯ ДЛЯ RENDER FREE
 # =============================================
 
-aiogram==3.13.0                    # Telegram Bot API v3
-pydantic==1.10.13
-openai==1.40.0
-httpx==0.28.1                      # Асинхронный HTTP-клиент для Grok
-python-dotenv==1.0.1               # Загрузка .env
-aiosqlite==0.20.0                  # Асинхронная SQLite
-apscheduler==3.10.4                # Планировщик напоминаний и будильников
-matplotlib==3.9.4                  # Все 5 красивых графиков
-numpy==2.2.2                       # Математика для heatmap и Gantt
-pandas==2.2.3                      # Работа с датами и данными
-pillow==11.1.0                     # Дополнительно для изображений (водяные знаки)
+aiogram==3.13.0
+openai==1.40.0                    # ← КРИТИЧНО: 1.x серия (без pydantic-core Rust)
+httpx==0.28.1
+python-dotenv==1.0.1
+aiosqlite==0.20.0
+apscheduler==3.10.4
 
-# Опционально (для будущего расширения)
-uvicorn==0.34.0                    # Если захотим веб-дашборд
-fastapi==0.115.0                   # Если захотим API
+# Графики (остаются, но с фиксом в main.py)
+matplotlib==3.9.4
+numpy==2.2.2
+pandas==2.2.3
+pillow==11.1.0
