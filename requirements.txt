@@ -4,7 +4,8 @@
 # =============================================
 
 aiogram==3.13.0                    # Telegram Bot API v3
-openai==2.24.0                     # точная последняя на сегодня
+pydantic==1.10.13
+openai==1.40.0
 httpx==0.28.1                      # Асинхронный HTTP-клиент для Grok
 python-dotenv==1.0.1               # Загрузка .env
 aiosqlite==0.20.0                  # Асинхронная SQLite
