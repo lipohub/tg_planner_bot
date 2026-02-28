@@ -27,6 +27,9 @@
 Версия: 2.1 (612 строк production-ready)
 """
 
+import matplotlib
+matplotlib.use('Agg')
+
 import asyncio
 import logging
 import signal
